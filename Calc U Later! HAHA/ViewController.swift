@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var numberDisplay: UILabel!
+    
+    @IBAction func numbers(_ sender: UIButton)
+    {
+        numberDisplay.text = numberDisplay.text! + String(sender.tag - 1)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +26,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//Quick edit for push capabilities
+
 
 }
 
