@@ -58,7 +58,7 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 13 // Percentage
             {
-                
+                numberDisplay.text = String(prevNum / 100)
             }
             
             operation = sender.tag
@@ -96,6 +96,11 @@ class ViewController: UIViewController {
             numOnScreen = 0;
             operation = 0;
         }
+        
+    }
+    
+    @IBAction func openFunc(_ sender: UIButton)
+    {
         
     }
     
