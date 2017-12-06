@@ -99,12 +99,6 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func openFunc(_ sender: UIButton)
-    {
-        
-    }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

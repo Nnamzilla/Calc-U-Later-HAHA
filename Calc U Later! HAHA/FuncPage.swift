@@ -11,6 +11,9 @@ import UIKit
 
 class FuncPage: UIViewController {
     
+    var numOnScreen:Double = 0;
+    
+    
     @IBAction func funcOps(_ sender: UIButton)
     {
         if sender.tag == 1
@@ -81,16 +84,4 @@ class FuncPage: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        <#code#>
-    }
 }
