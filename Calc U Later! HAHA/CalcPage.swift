@@ -15,6 +15,25 @@ class ViewController: UIViewController {
     var executeFunc = false
     var operation = 0;
     
+    @IBOutlet weak var FuncButton1: UIButton!
+    @IBOutlet weak var FuncButton2: UIButton!
+    @IBOutlet weak var FuncButton3: UIButton!
+    @IBOutlet weak var FuncButton4: UIButton!
+    @IBOutlet weak var FuncButton5: UIButton!
+    @IBOutlet weak var FuncButton6: UIButton!
+    @IBOutlet weak var FuncButton7: UIButton!
+    @IBOutlet weak var FuncButton8: UIButton!
+    @IBOutlet weak var FuncButton9: UIButton!
+    @IBOutlet weak var FuncButton10: UIButton!
+    @IBOutlet weak var FuncButton11: UIButton!
+    @IBOutlet weak var FuncButton12: UIButton!
+    @IBOutlet weak var FuncButton13: UIButton!
+    @IBOutlet weak var FuncButton14: UIButton!
+    @IBOutlet weak var FuncButton15: UIButton!
+    @IBOutlet weak var FuncButton16: UIButton!
+    
+    
+    
     @IBOutlet weak var numberDisplay: UILabel!
     
     @IBAction func numbers(_ sender: UIButton)
@@ -96,8 +115,122 @@ class ViewController: UIViewController {
             numOnScreen = 0;
             operation = 0;
         }
-        
     }
+    
+    @IBAction func funcOperations(_ sender: UIButton) {
+        if numberDisplay.text != ""
+        {
+            prevNum = Double(numberDisplay.text!)!
+            
+            if sender.tag == 101
+            {
+                numberDisplay.text = String(numOnScreen * -1)
+            }
+            else if sender.tag == 102
+            {
+                
+            }
+            else if sender.tag == 103
+            {
+                
+            }
+            else if sender.tag == 104
+            {
+                
+            }
+            else if sender.tag == 105
+            {
+                
+            }
+            else if sender.tag == 106
+            {
+                
+            }
+            else if sender.tag == 107
+            {
+                
+            }
+            else if sender.tag == 108
+            {
+                
+            }
+            else if sender.tag == 109
+            {
+                
+            }
+            else if sender.tag == 110
+            {
+                
+            }
+            else if sender.tag == 111
+            {
+                
+            }
+            else if sender.tag == 112
+            {
+                
+            }
+            else if sender.tag == 113
+            {
+                
+            }
+            else if sender.tag == 114
+            {
+                
+            }
+            else if sender.tag == 115
+            {
+                
+            }
+            else if sender.tag == 116
+            {
+                
+            }
+        }
+    }
+    
+    
+    @IBAction func useFunc(_ sender: UIButton) {
+        if FuncButton1.isHidden == true
+        {
+            FuncButton1.isHidden = false
+            FuncButton2.isHidden = false
+            FuncButton3.isHidden = false
+            FuncButton4.isHidden = false
+            FuncButton5.isHidden = false
+            FuncButton6.isHidden = false
+            FuncButton7.isHidden = false
+            FuncButton8.isHidden = false
+            FuncButton9.isHidden = false
+            FuncButton10.isHidden = false
+            FuncButton11.isHidden = false
+            FuncButton12.isHidden = false
+            FuncButton13.isHidden = false
+            FuncButton14.isHidden = false
+            FuncButton15.isHidden = false
+            FuncButton16.isHidden = false
+        }
+        else
+        {
+            FuncButton1.isHidden = true
+            FuncButton2.isHidden = true
+            FuncButton3.isHidden = true
+            FuncButton4.isHidden = true
+            FuncButton5.isHidden = true
+            FuncButton6.isHidden = true
+            FuncButton7.isHidden = true
+            FuncButton8.isHidden = true
+            FuncButton9.isHidden = true
+            FuncButton10.isHidden = true
+            FuncButton11.isHidden = true
+            FuncButton12.isHidden = true
+            FuncButton13.isHidden = true
+            FuncButton14.isHidden = true
+            FuncButton15.isHidden = true
+            FuncButton16.isHidden = true
+        }
+    }
+    
     
     
     override func viewDidLoad() {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53321FE11FD5FCEE004B7A59 /* FuncPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53321FE01FD5FCEE004B7A59 /* FuncPage.swift */; };
 		53BCD7A01FCD123500FB286D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BCD79F1FCD123500FB286D /* AppDelegate.swift */; };
 		53BCD7A21FCD123500FB286D /* CalcPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BCD7A11FCD123500FB286D /* CalcPage.swift */; };
 		53BCD7A51FCD123500FB286D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53BCD7A31FCD123500FB286D /* Main.storyboard */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		53321FE01FD5FCEE004B7A59 /* FuncPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncPage.swift; sourceTree = "<group>"; };
 		53BCD79C1FCD123500FB286D /* Calc U Later! HAHA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calc U Later! HAHA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BCD79F1FCD123500FB286D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53BCD7A11FCD123500FB286D /* CalcPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcPage.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				53BCD79F1FCD123500FB286D /* AppDelegate.swift */,
 				53BCD7A11FCD123500FB286D /* CalcPage.swift */,
-				53321FE01FD5FCEE004B7A59 /* FuncPage.swift */,
 				53BCD7A31FCD123500FB286D /* Main.storyboard */,
 				53BCD7A61FCD123500FB286D /* Assets.xcassets */,
 				53BCD7A81FCD123500FB286D /* LaunchScreen.storyboard */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53321FE11FD5FCEE004B7A59 /* FuncPage.swift in Sources */,
 				53BCD7A21FCD123500FB286D /* CalcPage.swift in Sources */,
 				53BCD7A01FCD123500FB286D /* AppDelegate.swift in Sources */,
 			);
