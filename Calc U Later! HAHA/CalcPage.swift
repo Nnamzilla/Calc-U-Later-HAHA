@@ -158,7 +158,7 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 110
             {
-                
+                numberDisplay.text = String(log2())
             }
             else if sender.tag == 111
             {
