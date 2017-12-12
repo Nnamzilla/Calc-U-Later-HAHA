@@ -162,12 +162,14 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 111
             {
-                
+                numberDisplay.text = String(log2(numOnScreen))
             }
             else if sender.tag == 112
             {
-                
+                numberDisplay.text = String(3.1415)
             }
+            
+            useFunc(sender)
         }
     }
     

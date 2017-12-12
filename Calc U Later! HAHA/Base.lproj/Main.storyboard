@@ -104,7 +104,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="openFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFe-XW-LaV"/>
                                     <action selector="useFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whj-Cn-Cze"/>
                                 </connections>
                             </button>
@@ -372,10 +371,9 @@
                     </view>
                     <connections>
                         <outlet property="FuncButton1" destination="aqn-DT-mUT" id="fsd-8c-WKh"/>
-                        <outlet property="FuncButton13" destination="C0z-wt-DPZ" id="ceO-Pc-xJu"/>
-                        <outlet property="FuncButton14" destination="8Nh-qt-DbM" id="zON-7h-bD9"/>
-                        <outlet property="FuncButton15" destination="f0J-KW-Xga" id="LQO-H6-iv4"/>
-                        <outlet property="FuncButton16" destination="zL2-pl-z1K" id="vJp-s0-zbF"/>
+                        <outlet property="FuncButton10" destination="8Nh-qt-DbM" id="ZXG-gY-fK7"/>
+                        <outlet property="FuncButton11" destination="f0J-KW-Xga" id="2Sg-yQ-1PX"/>
+                        <outlet property="FuncButton12" destination="zL2-pl-z1K" id="VOa-QR-xyQ"/>
                         <outlet property="FuncButton2" destination="ObS-j2-wDY" id="KlT-dK-rzY"/>
                         <outlet property="FuncButton3" destination="YOz-6N-WHX" id="tJU-qL-hvD"/>
                         <outlet property="FuncButton4" destination="mRB-1I-YqH" id="f9r-gX-5Mr"/>
@@ -383,6 +381,7 @@
                         <outlet property="FuncButton6" destination="L1b-Uf-OuW" id="V0Z-j0-O8a"/>
                         <outlet property="FuncButton7" destination="qhW-f1-sZM" id="dUo-1y-p5w"/>
                         <outlet property="FuncButton8" destination="xJc-pF-mOF" id="y9W-b1-AaS"/>
+                        <outlet property="FuncButton9" destination="C0z-wt-DPZ" id="yPd-lb-fHu"/>
                         <outlet property="numberDisplay" destination="v5g-gI-ihK" id="wsF-N4-Oh9"/>
                     </connections>
                 </viewController>
