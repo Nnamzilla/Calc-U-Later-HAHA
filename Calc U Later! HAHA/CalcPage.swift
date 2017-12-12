@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var prevNum:Double = 0;
     var executeFunc = false
     var operation = 0;
+
+    
     
     @IBOutlet weak var FuncButton1: UIButton!
     @IBOutlet weak var FuncButton2: UIButton!
@@ -27,10 +29,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var FuncButton10: UIButton!
     @IBOutlet weak var FuncButton11: UIButton!
     @IBOutlet weak var FuncButton12: UIButton!
-    @IBOutlet weak var FuncButton13: UIButton!
-    @IBOutlet weak var FuncButton14: UIButton!
-    @IBOutlet weak var FuncButton15: UIButton!
-    @IBOutlet weak var FuncButton16: UIButton!
     
     
     
@@ -128,23 +126,23 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 102
             {
-                
+                numberDisplay.text = String(1 / numOnScreen)
             }
             else if sender.tag == 103
             {
-                
+                numberDisplay.text = String(numOnScreen * numOnScreen)
             }
             else if sender.tag == 104
             {
-                
+                numberDisplay.text = String(numOnScreen * numOnScreen * numOnScreen)
             }
             else if sender.tag == 105
             {
-                
+                numberDisplay.text = String(numOnScreen.squareRoot())
             }
             else if sender.tag == 106
             {
-                
+                numberDisplay.text = String(pow(numOnScreen, (1/3)))
             }
             else if sender.tag == 107
             {
@@ -170,22 +168,6 @@ class ViewController: UIViewController {
             {
                 
             }
-            else if sender.tag == 113
-            {
-                
-            }
-            else if sender.tag == 114
-            {
-                
-            }
-            else if sender.tag == 115
-            {
-                
-            }
-            else if sender.tag == 116
-            {
-                
-            }
         }
     }
     
@@ -205,10 +187,6 @@ class ViewController: UIViewController {
             FuncButton10.isHidden = false
             FuncButton11.isHidden = false
             FuncButton12.isHidden = false
-            FuncButton13.isHidden = false
-            FuncButton14.isHidden = false
-            FuncButton15.isHidden = false
-            FuncButton16.isHidden = false
         }
         else
         {
@@ -224,10 +202,6 @@ class ViewController: UIViewController {
             FuncButton10.isHidden = true
             FuncButton11.isHidden = true
             FuncButton12.isHidden = true
-            FuncButton13.isHidden = true
-            FuncButton14.isHidden = true
-            FuncButton15.isHidden = true
-            FuncButton16.isHidden = true
         }
     }
     
