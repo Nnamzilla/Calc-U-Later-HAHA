@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var FuncButton10: UIButton!
     @IBOutlet weak var FuncButton11: UIButton!
     @IBOutlet weak var FuncButton12: UIButton!
+    @IBOutlet weak var FuncButton13: UIButton!
+
     
     
     
@@ -100,6 +103,10 @@ class ViewController: UIViewController {
             {
                 numberDisplay.text = String(prevNum / numOnScreen)
             }
+            else if operation == 107 // RaiseToPower
+            {
+                numberDisplay.text = String(pow(prevNum, numOnScreen))
+            }
         }
         else if sender.tag == 13
         {
@@ -146,19 +153,35 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 107
             {
-                
+                operation = sender.tag
+                executeFunc = true;
             }
             else if sender.tag == 108
             {
-                
+                var x:Double = 1.0
+                let intVal:Int = Int(numOnScreen)
+                var count:Double = 1.0
+                if Double(intVal) != numOnScreen
+                {
+                    numberDisplay.text = "Error"
+                }
+                else
+                {
+                    while count < Double(intVal)
+                        {
+                            x = count * x
+                            count += 1
+                        }
+                    numberDisplay.text = String(x)
+                }
             }
             else if sender.tag == 109
             {
-                
+                numberDisplay.text = String(2.7182818284)
             }
             else if sender.tag == 110
             {
-                numberDisplay.text = String(log2())
+                numberDisplay.text = String(log(numOnScreen))
             }
             else if sender.tag == 111
             {
@@ -166,7 +189,7 @@ class ViewController: UIViewController {
             }
             else if sender.tag == 112
             {
-                numberDisplay.text = String(3.1415)
+                numberDisplay.text = String(3.1415926)
             }
             
             useFunc(sender)
@@ -189,6 +212,7 @@ class ViewController: UIViewController {
             FuncButton10.isHidden = false
             FuncButton11.isHidden = false
             FuncButton12.isHidden = false
+            FuncButton13.isHidden = false
         }
         else
         {
@@ -204,6 +228,7 @@ class ViewController: UIViewController {
             FuncButton10.isHidden = true
             FuncButton11.isHidden = true
             FuncButton12.isHidden = true
+            FuncButton13.isHidden = true
         }
     }
     
