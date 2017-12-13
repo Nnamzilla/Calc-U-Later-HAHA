@@ -129,27 +129,33 @@ class ViewController: UIViewController {
             
             if sender.tag == 101
             {
-                numberDisplay.text = String(numOnScreen * -1)
+                numberDisplay.text = String(prevNum * -1)
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 102
             {
-                numberDisplay.text = String(1 / numOnScreen)
+                numberDisplay.text = String(1 / prevNum)
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 103
             {
-                numberDisplay.text = String(numOnScreen * numOnScreen)
+                numberDisplay.text = String(prevNum * prevNum)
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 104
             {
-                numberDisplay.text = String(numOnScreen * numOnScreen * numOnScreen)
+                numberDisplay.text = String(prevNum * prevNum * prevNum)
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 105
             {
-                numberDisplay.text = String(numOnScreen.squareRoot())
+                numberDisplay.text = String(prevNum.squareRoot())
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 106
             {
-                numberDisplay.text = String(pow(numOnScreen, (1/3)))
+                numberDisplay.text = String(pow(prevNum, (1/3)))
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 107
             {
@@ -159,37 +165,42 @@ class ViewController: UIViewController {
             else if sender.tag == 108
             {
                 var x:Double = 1.0
-                let intVal:Int = Int(numOnScreen)
+                let intVal:Int = Int(prevNum)
                 var count:Double = 1.0
-                if Double(intVal) != numOnScreen
+                if Double(intVal) != prevNum
                 {
                     numberDisplay.text = "Error"
                 }
                 else
                 {
-                    while count < Double(intVal)
+                    while count <= Double(intVal)
                         {
                             x = count * x
                             count += 1
                         }
                     numberDisplay.text = String(x)
+                    prevNum = Double(numberDisplay.text!)!
                 }
             }
             else if sender.tag == 109
             {
                 numberDisplay.text = String(2.7182818284)
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 110
             {
-                numberDisplay.text = String(log(numOnScreen))
+                numberDisplay.text = String(log(prevNum))
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 111
             {
-                numberDisplay.text = String(log2(numOnScreen))
+                numberDisplay.text = String(log2(prevNum))
+                prevNum = Double(numberDisplay.text!)!
             }
             else if sender.tag == 112
             {
                 numberDisplay.text = String(3.1415926)
+                prevNum = Double(numberDisplay.text!)!
             }
             
             useFunc(sender)
